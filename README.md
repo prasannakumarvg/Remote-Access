@@ -3,12 +3,8 @@
 # Remote Access Project
 
         
-██████╗░███████╗███╗░░░███╗░█████╗░████████╗███████╗  ░█████╗░░█████╗░░█████╗░███████╗░██████╗░██████╗
-██╔══██╗██╔════╝████╗░████║██╔══██╗╚══██╔══╝██╔════╝  ██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
-██████╔╝█████╗░░██╔████╔██║██║░░██║░░░██║░░░█████╗░░  ███████║██║░░╚═╝██║░░╚═╝█████╗░░╚█████╗░╚█████╗░
-██╔══██╗██╔══╝░░██║╚██╔╝██║██║░░██║░░░██║░░░██╔══╝░░  ██╔══██║██║░░██╗██║░░██╗██╔══╝░░░╚═══██╗░╚═══██╗
-██║░░██║███████╗██║░╚═╝░██║╚█████╔╝░░░██║░░░███████╗  ██║░░██║╚█████╔╝╚█████╔╝███████╗██████╔╝██████╔╝
-╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝  ╚═╝░░╚═╝░╚════╝░░╚════╝░╚══════╝╚═════╝░╚═════╝░
+![Screenshot from 2023-12-03 21-24-26](https://github.com/prasannakumarvg/Remote-Access/assets/123349921/13e19820-9541-4043-a25f-7ebf258bf0e6)
+
 
 Welcome to the Remote Access Project! This project is a demonstration of a simple remote access system implemented in Python, exploring network programming and system administration concepts. Whether you're a student, developer, or tech enthusiast, feel free to explore, contribute, and learn from this project.
 
@@ -32,8 +28,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/remote-access-project.git
+    > https://github.com/prasannakumarvg/Remote-Access.git
 
 2.Navigate to the project directory:
 
@@ -72,12 +67,15 @@ Once the server and client are running, you can interact with the system using t
 
 
 
-Contributing
-Contributions are welcome! Whether you want to fix a bug, add a feature, or improve documentation, please follow the contribution guidelines.
+Contributing:
 
-License
-This project is licensed under the MIT License.
+       Contributions are welcome! Whether you want to fix a bug, add a feature, or improve documentation, please follow the contribution guidelines.
 
-Acknowledgments
-Inspiration: Mention any projects, articles, or individuals that inspired your work.
-Tools Used: List any third-party tools, libraries, or frameworks used in the project.
+License :
+       This project is licensed under the MIT License.
+
+Acknowledgments: 
+
+       Inspiration: Mention any projects, articles, or individuals that inspired your work.
+       
+       Tools Used: List any third-party tools, libraries, or frameworks used in the project.
