@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed:
 
 4.Run the client (on a different machine or terminal):
 
-    >   python3 client.py
+    >   python3 user.py
 
     
 Usage : 
