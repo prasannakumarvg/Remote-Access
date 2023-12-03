@@ -36,16 +36,12 @@ Before you begin, ensure you have the following installed:
 
 3.Run the server:
 
-    >   python server.py
+    >   python3 server.py
 
 
 4.Run the client (on a different machine or terminal):
 
-    >   python client.py
-
-5.Run the client (on a different machine or terminal):
-
-    >   python client.py
+    >   python3 client.py
 
     
 Usage : 
