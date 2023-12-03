@@ -60,6 +60,10 @@ def Main():
             result = f"File '{name}' created successfully."
             s.send(result.encode())
 
+        else:
+            result = "Invalid command. Please enter a valid command."
+            s.send(result.encode())
+
 if __name__ == '__main__':
     Main()
 
