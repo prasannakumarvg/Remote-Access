@@ -48,35 +48,35 @@ def Main():
 
              if command.lower() == "exit":
                 break
-             if command.lower()=="mkdir":
+             elif command.lower()=="mkdir":
                 dire=str(input("Enter the directory : "))
                 conn.send(dire.encode())
                 data = conn.recv(1024)
                 print(data.decode())
                 continue
 
-             if command.lower() =="rm.file":
+             elif command.lower() =="rm.file":
                 file=str(input("Enter the filename : "))
                 conn.send(file.encode())
                 data = conn.recv(1024)
                 print(data.decode())
                 continue
 
-             if command.lower() =="rm.dir":
+             elif command.lower() =="rm.dir":
                 file=str(input("Enter the filename : "))
                 conn.send(file.encode())
                 data = conn.recv(1024)
                 print(data.decode())
                 continue
 
-             if command.lower()=="cd":
+             elif command.lower()=="cd":
                 change=str(input("Enter the directory : "))
                 conn.send(change.encode())
                 data=conn.recv(1024)
                 print(data.decode())
                 continue
                 
-             if command.lower()=="file":
+             elif command.lower()=="file":
                 file=str(input("Enter the file name : "))
                 conn.send(file.encode())
                 data=conn.recv(1024)
@@ -84,7 +84,7 @@ def Main():
                 continue
             
 
-             if command.lower() == "hidden":
+             elif command.lower() == "hidden":
                 data = conn.recv(1024)
                 print("Received data : ",data.decode())
                 result = json.loads(data.decode())
@@ -93,7 +93,7 @@ def Main():
                      print(item) 
                 continue
 
-             if command.lower()=="copy":
+             elif command.lower()=="copy":
                 src=str(input("Enter the source : "))
                 conn.send(src.encode())
                 des=str(input("Enter the destination : "))
@@ -102,7 +102,7 @@ def Main():
                 print(data.decode())
                 continue
               
-             if command.lower()=="move":
+             elif command.lower()=="move":
                 src=str(input("Enter the source : "))
                 conn.send(src.encode())
                 des=str(input("Enter the destination : "))
@@ -111,14 +111,14 @@ def Main():
                 print(data.decode())
                 continue
 
-             if command.lower()=="open":
+             elif command.lower()=="open":
                 file=str(input("Enter the File Name : "))
                 conn.send(file.encode())
                 data=conn.recv(1024)
                 print(data.decode())
                 continue
 
-             if command.lower()=="rename":
+             elif command.lower()=="rename":
                 src=str(input("Enter the File name : "))
                 conn.send(src.encode())
                 des=str(input("Enter the New File name : "))
@@ -127,9 +127,10 @@ def Main():
                 print(data.decode())
                 continue
 
-             data = conn.recv(1024)
+            
 
-             if data:
+             else:
+                data = conn.recv(1024)
                 print("Response from client :  ", data.decode(),"\n")
 
        
