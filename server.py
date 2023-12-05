@@ -30,6 +30,7 @@ def Main():
            print("""
                   >ls      - list the directories
                   >cd      - change the directories
+                  >mkdir   - make directory
                   >cd ../  - go to previous directory
                   >hidden  - to show the hidden directories
                   >rm.file - remove a file
