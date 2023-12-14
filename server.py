@@ -40,7 +40,8 @@ def Main():
                   >copy    - to copy a file or directory
                   >move    - move a file or directory
                   >rename  - rename a file or directory
-                  >exit    - exit the connection
+                  >exit    - exit the connectio
+                  >help    - for the menu
                   """)
            while True:
              command = input("Enter Command : ")
@@ -87,7 +88,6 @@ def Main():
 
              elif command.lower() == "hidden":
                 data = conn.recv(1024)
-                print("Received data : ",data.decode())
                 result = json.loads(data.decode())
                 print("Response from client:")
                 for item in result:
@@ -128,11 +128,28 @@ def Main():
                 print(data.decode())
                 continue
 
-            
+             elif command.lower()=="help":
+                data=conn.recv(1024)
+                print("""
+                  >ls      - list the directories
+                  >cd      - change the directories
+                  >mkdir   - make directory
+                  >cd ../  - go to previous directory
+                  >hidden  - to show the hidden directories
+                  >rm.file - remove a file
+                  >rm.dir  - remove a directory
+                  >file    - create a file
+                  >open    - open a file
+                  >copy    - to copy a file or directory
+                  >move    - move a file or directory
+                  >rename  - rename a file or directory
+                  >exit    - exit the connection
+                  """)
+                continue
 
              else:
                 data = conn.recv(1024)
-                print("Response from client :  ", data.decode(),"\n")
+                print( data.decode(),"\n")
 
        
         except KeyboardInterrupt:
